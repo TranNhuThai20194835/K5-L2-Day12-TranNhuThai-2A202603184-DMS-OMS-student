@@ -1,0 +1,7 @@
+frame_id,source,phenomenon,affected_field,effect_on_label
+S06_ir,IR_sim,"Hộp giấy nâu trên RGB thành khối xám sáng trên IR-sim, mất màu",object.type,"Giữ type = box, nhận theo hình dạng và vị trí giữa ghế, không đoán bằng màu (quy tắc 4)"
+S03_ir,IR_sim,"RGB cùng cảnh tối đen (trẻ và em bé gần như không thấy) nhưng IR-sim sáng rõ, không phản ánh ánh sáng thật",frame_meta.light,"Giữ light = unknown cho mọi ảnh SVIRO, không suy day/night từ ảnh IR hay từ RGB"
+S08_ir,IR_sim,"Bên trong ghế trẻ em tối khó thấy trên RGB, IR-sim sáng hơn nhưng hình trong ghế vẫn nhòe",child_seat.occupied,"Giữ occupied = unknown (guideline không có yes), không suy từ ảnh kia của cùng cảnh"
+S03_ir,IR_sim,"Nhiễu hạt mạnh trên mặt, không phân biệt được khe mắt",face.eye_left / eye_right,Ghi unknown cho cả hai mắt; OMS chỉ cần box face
+D01,real_IR,"(BẠN ĐIỀN: hiện tượng thật làm mắt trái không rõ, ví dụ phản xạ/kính/tay che)",left_eye_state,eye_left = unknown; đã bật occluded hoặc outside cho left_eye_
+D05,real_IR,(BẠN ĐIỀN: hiện tượng thật làm mắt trái không rõ),left_eye_state,eye_left = unknown; đã bật occluded hoặc outside cho left_eye_
